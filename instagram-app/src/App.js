@@ -6,17 +6,20 @@ import PostContainer from './components/PostContainer/PostContainer';
 
 
 class App extends React.Component{
-  constructor(){
+  constructor() {
     super();
-    this.state = {dummyData};
+    this.state = {
+      postsData: dummyData
+    };
   }
 
-  render(){
-    return(
+  render() {
+    console.log(this.state.postsData);
+    return (
       <div className="App">
         <SearchBar />
-        <PostContainer />
-    </div>
+        <PostContainer postsData={this.state.postsData} />
+      </div>
     );
   }
 }

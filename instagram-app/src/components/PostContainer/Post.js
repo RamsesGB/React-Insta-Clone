@@ -5,7 +5,7 @@ import '../PostContainer/PostContainer.css';
 const Post = props => {
     return(
         <div>
-
+            
         </div>
     );
 }
